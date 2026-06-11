@@ -71,29 +71,40 @@
         }
         
         .hero {
-            background: linear-gradient(rgba(0,176,80,0.85), rgba(0,160,64,0.85)), 
-                        url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600') center/cover;
+            background: linear-gradient(rgba(0,176,80,0.75), rgba(0,160,64,0.75)), 
+                        url('images/hero-bg.jpg') center/cover;
             color: white;
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
         }
         
         .hero h1 {
-            font-size: 48px;
+            font-size: 55px;
+            font-weight: 800;
+            margin-bottom: 40px;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+        
+        .hero p:first-of-type {
+            font-size: 26px;
             font-weight: 700;
             margin-bottom: 30px;
         }
         
-        .hero p {
-            font-size: 18px;
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
-        
         .hero .tagline {
-            font-size: 24px;
-            font-weight: 600;
-            margin-top: 40px;
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 50px;
+            letter-spacing: 0px;
         }
         
         .container {
@@ -271,7 +282,15 @@
         
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 32px;
+                font-size: 36px;
+            }
+            
+            .hero p:first-of-type {
+                font-size: 20px;
+            }
+            
+            .hero .tagline {
+                font-size: 22px;
             }
             
             .how-it-works {
