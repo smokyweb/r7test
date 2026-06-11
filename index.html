@@ -71,18 +71,35 @@
         }
         
         .hero {
-            background: url('images/hero-bg.jpg') center/cover;
             color: white;
-            padding: 120px 20px;
             text-align: center;
+        }
+        
+        .hero-top {
+            background: url('images/hero-bg.jpg') center/cover;
+            padding: 80px 20px 40px;
+        }
+        
+        .hero-bottom {
+            background: #00b050;
+            padding: 40px 20px 80px;
         }
         
         .hero h1 {
             font-size: 55px;
             font-weight: 800;
-            margin-bottom: 40px;
+            margin-bottom: 0;
             line-height: 1.2;
             letter-spacing: -0.5px;
+            text-shadow: 
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000,
+                -3px 0 4px rgba(0,0,0,0.8),
+                3px 0 4px rgba(0,0,0,0.8),
+                0 -3px 4px rgba(0,0,0,0.8),
+                0 3px 4px rgba(0,0,0,0.8);
         }
         
         .hero p {
@@ -97,12 +114,14 @@
             font-size: 26px;
             font-weight: 700;
             margin-bottom: 30px;
+            margin-top: 0;
         }
         
         .hero .tagline {
             font-size: 28px;
             font-weight: 700;
-            margin-top: 50px;
+            margin-top: 30px;
+            margin-bottom: 0;
             letter-spacing: 0px;
         }
         
@@ -282,6 +301,15 @@
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
+                text-shadow: 
+                    -1px -1px 0 #000,
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    1px 1px 0 #000,
+                    -2px 0 3px rgba(0,0,0,0.8),
+                    2px 0 3px rgba(0,0,0,0.8),
+                    0 -2px 3px rgba(0,0,0,0.8),
+                    0 2px 3px rgba(0,0,0,0.8);
             }
             
             .hero p:first-of-type {
@@ -329,11 +357,15 @@
     </header>
     
     <div class="hero">
-        <h1>How RNTR Partners<br>With Your Rental Business</h1>
-        <p>Connect with More Renters in Your Area!</p>
-        <p>RNTR is the fastest-growing online and in-app rental marketplace designed to help rental stores and businesses get more bookings.</p>
-        <p>Whether you rent out equipment, tools, inflatables, party supplies, trailers, or tents, RNTR helps you connect with renters near you and turn your inventory into more income.</p>
-        <p class="tagline">More Exposure. More Customers. More Rentals.</p>
+        <div class="hero-top">
+            <h1>How RNTR Partners<br>With Your Rental Business</h1>
+        </div>
+        <div class="hero-bottom">
+            <p>Connect with More Renters in Your Area!</p>
+            <p>RNTR is the fastest-growing online and in-app rental marketplace designed to help rental stores and businesses get more bookings.</p>
+            <p>Whether you rent out equipment, tools, inflatables, party supplies, trailers, or tents, RNTR helps you connect with renters near you and turn your inventory into more income.</p>
+            <p class="tagline">More Exposure. More Customers. More Rentals.</p>
+        </div>
     </div>
     
     <div class="container">
